@@ -1,0 +1,28 @@
+.error_modal {
+    display: none;
+    top: 20px;
+    right: 20px;
+    width: 325px;
+    position: fixed;
+    z-index: 10000003;
+    max-width: 90%;
+}
+.noty_theme__bootstrap-v4.noty_bar {
+    margin: 4px 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.noty_theme__bootstrap-v4.noty_bar .noty_body {
+    padding: .75rem 1.25rem;
+}
+.noty_theme__bootstrap-v4.noty_type__error.success_noty{
+    background-color: #e5f2de !important;
+    color: #434444 !important;
+}
+.noty_theme__bootstrap-v4.noty_type__error {
+    background-color: #f2dede;
+    color: #a94442;
+    border-color: #ebccd1;
+}

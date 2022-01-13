@@ -1,0 +1,782 @@
+.content {
+    display: grid;
+    padding-top: 100px;
+    min-height: auto;
+}
+
+.new_games {
+    margin: auto;
+}
+
+.list>a {
+    display: inline-flex;
+    margin-left: 5.21%;
+    transition: all 0.5s;
+}
+
+.list>a>svg {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 9px;
+    fill: #3a3a70;
+}
+
+.list>a.activ>svg {
+    fill: url(#paint1_linear);
+}
+
+.list>a>span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A70;
+    margin-left: 15px;
+}
+
+.games_menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.list>a:first-child {
+    margin-left: auto;
+}
+
+.list>a:last-child {
+    margin-right: auto;
+}
+
+.list>a.activ {
+    background: linear-gradient(90deg, #D66CFF 0%, #5887FF 86.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.block_wrapper {
+    min-height: auto;
+    width: 100%;
+    margin-top: 0;
+    margin-top: 130px;
+}
+
+.block_wrapper_prof {
+    width: 75%;
+    padding: 50px 65px;
+    margin: 0 auto;
+    display: grid;
+    background: #1E202E;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.new_games>div {
+    display: grid;
+}
+
+.avatar_update {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 30px;
+    min-width: 80px;
+}
+
+/*.avatar_update:hover{
+    opacity: 0.6;
+}*/
+
+/*.avatar_update:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: url(/temple/imgs/avatar_update.png) 5px 5px no-repeat #19194B;
+    border: 2px solid #121239;
+    left: 72%;
+}*/
+
+.user_info_tall {
+    display: flex;
+}
+
+.user_info_tall p {
+    margin-bottom: 10px;
+    white-space: nowrap;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.user_info_tall a {
+    display: flex;
+    line-height: 17px;
+    margin-bottom: 8px;
+    cursor: default;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.user_info_tall a span {
+    margin-left: 5px;
+    color: #1cb55c;
+    font-weight: 600;
+}
+
+.user_lvl {
+    background: #19194B;
+    padding: 20px;
+    margin-top: 54px;
+    display: grid;
+}
+
+.user_lvl a,
+.user_lvl a span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+}
+
+.user_lvl a {
+    margin-bottom: 7px;
+}
+
+.user_lvl a span {
+    margin-left: auto;
+    color: #34347A;
+}
+
+.user_lvl a:nth-child(2),
+.user_lvl a:nth-child(2) span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.user_lvl progress {
+    border: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #34347A;
+    height: 3px;
+}
+
+.user_lvl progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+.user_lvl progress::-webkit-progress-value {
+    border-radius: 1.5px;
+    background: linear-gradient(90deg, #D66CFF 0%, #5887FF 124.84%), #34347A;
+}
+
+.block_wrapper_prof .button_check {
+    font-size: 11px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 15px;
+    width: auto;
+}
+
+.user_info input {
+    background: #33364B;
+    width: calc(100% - 40px);
+    height: 29px;
+    margin: 0 auto;
+    color: #ffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+}
+
+.user_info input:hover{
+    border: 1px solid #545770;
+}
+
+.user_info input:first-child {
+    margin-top: 0;
+}
+
+.user_info {
+    width: 25.42%;
+}
+
+.user_info input::placeholder {
+    color: #545770;
+}
+
+.flex>div {
+    margin-right: 2.67%;
+}
+
+.user_info span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: -16px;
+    display: block;
+}
+
+.prof_h1 {
+    margin-top: 0 !important;
+    margin-bottom: 77px !important;
+}
+
+.pol_user_info {
+    display: flex;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #3A3A70;
+}
+
+.user_info .wrapper_checkbox_inout {
+    margin: 0;
+}
+
+.pol_user_info .checkbox_inout_block label {
+    font-size: 14px;
+    color: #3A3A70;
+}
+
+.pol_user_info .checkbox_inout_block>label {
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+.checkbox_inout_block .activ {
+    color: #FFFFFF !important;
+}
+
+.pol_user_info .checkbox_inout_block .wrapper_checkbox_inout{
+    top: -5px;
+}
+
+.pol_user_info .checkbox_inout_block .wrapper_checkbox_inout {
+    background: #3A3A70;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+}
+
+.pol_user_info .wrapper_checkbox_inout label:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    margin-top: 7px;
+    background: url(/temple/imgs/checkbox_1.png) no-repeat;
+    margin-left: -4px;
+}
+
+.last_user_info {
+    margin-top: 75px;
+    font-size: 14px;
+    color: #3A3A70;
+    display: flex;
+}
+
+.last_user_info p {
+    width: 63%;
+}
+
+.last_user_info .button_check {
+    margin-left: 4%;
+    width: 100px;
+    margin-top: auto;
+}
+
+.user_info * {
+    max-width: 100% !important;
+}
+
+.datepicker-here_wrapper {
+    width: 100%;
+    margin-right: 5.56% !important;
+}
+
+.block_wrapper_prof .activ_input:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    margin-left: -21px;
+    margin-top: 6px;
+    background: url(/temple/imgs/checkbox.png) 3px 3px / 85% 80% no-repeat;
+}
+
+.user_info>div {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.user_info_item p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.activ_input:first-child {
+    margin-top: 0;
+}
+
+#info_user_important_save {
+    margin-top: auto;
+    margin-left: 0;
+    width: 100px;
+}
+
+.user_info>div:first-child {
+    margin-top: 0
+}
+
+.block_wrapper_prof_flex {
+    display: flex;
+}
+
+.block_wrapper_prof_menu_button {
+    display: flex;
+    margin-left: auto;
+}
+
+.block_wrapper_prof_menu_button_div {
+    margin: auto;
+    color: #4C506D;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 25px;
+    padding: 10px 38px;
+    white-space: nowrap;
+    margin-right: 1.39%;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    line-height: 25px;
+}
+
+.block_wrapper_prof_menu_button_div:hover {
+    background: #1CB55C;
+    color: #FFFFFF;
+    border: 1px solid #1CB55C;
+}
+
+.block_wrapper_prof_menu_button_div_grin{
+    background: #1CB55C;
+    border:none;
+    color: #FFFFFF;
+}
+
+.block_wrapper_prof_menu_button_div_grin:hover{
+    background: #35D678;
+    border:none;
+}
+
+.flex .user_info:nth-child(3) {
+    width: 43.82%;
+    margin-right: 0;
+}
+
+.data_svg {
+    width: 0;
+    margin-right: 0 !important;
+    display: grid;
+    position: relative;
+    left: -47px;
+    margin-top: 6px;
+}
+
+.data_svg svg {
+    min-width: 20px;
+    margin: auto;
+    fill: #545770;
+    transition: all 0.4s;
+}
+
+/*data*/
+
+.ui-datepicker {
+    width: 27.3em;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+    background: linear-gradient(0deg, #26293A, #26293A), #282729;
+    border-radius: 0px 0px 10px 10px;
+    padding: 22px 40px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/temple/fonts/Inter-Regular.ttf);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: transparent;
+    text-align: center;
+    color: #C9C8CC;
+    padding: 7.5px 0px;
+    border-radius: 100%;
+    width: 37px;
+    margin: 0 auto;
+    transition: all 0.4s;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.9011px;
+    line-height: 22px;
+}
+
+.ui-state-default.ui-state-hover:hover {
+    background: #34374B;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    background: #1CB55C !important;
+    color: #F8F7FA !important;
+}
+
+.ui-datepicker th {
+    padding: 7px .3em;
+    text-align: center;
+    border: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.9011px;
+    line-height: 22px;
+    color: #F8F7FA;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after,
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-next {
+    display: none;
+}
+
+.ui-widget-header {
+    border: none;
+    background: transparent;
+    color: #333333;
+    font-weight: bold;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.ui-datepicker-current,
+.ui-datepicker-close {
+    background: #34374C !important;
+    border-radius: 7.32374px !important;
+    color: #F8F7FA !important;
+    font-family: Inter !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 12.8165px !important;
+    line-height: 22px !important;
+    opacity: 1 !important;
+    padding: 7px 45px !important;
+    transition: all 0.4s;
+}
+
+.ui-datepicker-close {
+    background: #1CB55C !important;
+}
+
+.ui-datepicker-current:hover,
+.ui-datepicker-close:hover {
+    opacity: 0.6 !important;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    background: #26293a;
+    border-radius: 7.32374px;
+    border: none;
+    outline: none;
+    text-align-last: center;
+    padding: 10px 0;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.ui-datepicker select.ui-datepicker-month:hover,
+.ui-datepicker select.ui-datepicker-year:hover {
+    background: #34374B;
+}
+
+.ui-datepicker select.ui-datepicker-month::-webkit-scrollbar,
+.ui-datepicker select.ui-datepicker-year::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*data*/
+
+.block_verification_alerts .block_wrapper_prof_menu_button_div {
+    width: 103px;
+    margin-left: 0;
+    border: none;
+    margin-top: 50px;
+}
+
+.block_verification_alerts h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 45px;
+    color: #FFFFFF;
+}
+
+.block_verification_alerts font {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.checkbox_inout_block {
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.block_verification_alerts .checkbox_inout_block label {
+    cursor: pointer;
+    color: #4C506D;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+    top: 5px;
+}
+
+.profil_verification_alerts {
+    margin-top: 25px;
+}
+
+.profil_verification_alerts .flex {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.profil_verification_alerts .block_wrapper_prof {
+    width: 40.49%;
+    margin-left: 0;
+}
+
+.block_verification_alerts .wrapper_checkbox_inout label:after {
+    margin-left: -4px;
+    margin-top: 2px;
+}
+
+.block_Verification h1 {
+    margin-bottom: 20px;
+}
+
+.block_Verification p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #4C506D;
+}
+
+.file_block_Verification_wrapper{
+    display: flex;
+    margin-top: 24px;
+}
+
+.file_block_Verification_wrapper .block_wrapper_prof_menu_button_div{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.file_block_Verification a{
+        font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    margin-bottom: 12px;
+    padding-left: 26px;
+    transition: all 0.4s;
+}
+
+.file_block_Verification a:hover{
+        text-decoration-line: none;
+}
+
+.file_block_Verification a:before{
+content: '';
+    position: absolute;
+    width: 17px;
+    height: 21px;
+    margin-top: -3px;
+    background: url(/temple/imgs/file.png) no-repeat;
+    margin-left: -26px;
+}
+
+.file_block_Verification p{
+    font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+color: #4C506D;
+margin-top: 12px;
+}
+
+.file_block_Verification{
+    height: fit-content;
+    margin-top: auto;
+}
+
+.user_info_item_wrapper{
+    width: 50%;
+}
+
+.user_info_item_block{
+    display: flex;
+}
+
+.user_info_item_block .user_info_item_wrapper:first-child{
+    padding-right: 2%;
+    width: 54%;
+}
+
+.user_info_item_block .user_info_item_wrapper:last-child{
+  width: 44%;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date{
+    margin-top: 17px;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date .language{
+        width: 100%;
+    margin-right: 0;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date .language>div{
+        background: #33364B;
+    border-radius: 10px;
+    padding: 7px 20px;
+    height: 29px;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date .language>div>div>span{
+        margin-top: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+        margin-left: 0;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date .language>div>div>svg{
+    margin-left: auto;
+    margin-right: -3px;
+    margin-top: 13px;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date .language>div>div>input[value=""] + span{
+    color: #545770;
+}
+
+.user_info_item_wrapper_language .input_block_card_save_wrapper_date .language ul{
+    width: 14.5%;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0;
+        overflow: hidden;
+}
+
+.change_password_wrapper_old_password{
+        padding: 16px 0;
+    display: grid;
+}
+
+.change_password_wrapper>div{
+width: 50%;
+}
+
+.change_password_wrapper p{
+font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.change_password_wrapper input{
+    width: calc(100% - 20px);
+}
+
+.change_password_wrapper{
+    padding: 16px 0;
+    display: flex;
+    width: 86.78%;
+    margin: 0 auto;
+}
+
+.change_password_wrapper_old_password p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 7%;
+}
+
+#change_password .inout_block{
+    width: 525px;
+}
+
+#change_password .button_modal_green{
+    margin-bottom: 35px;
+}

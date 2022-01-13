@@ -1,0 +1,332 @@
+._2JflO {
+    padding: 0 40px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+}
+.tasks {
+    padding: 25px;
+    border-radius: 6px;
+    background: #272d39;
+}
+.breadcrumb {
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400
+}
+
+.breadcrumb a {
+    margin-right: 30px;
+    position: relative;
+    color: #fff
+}
+
+.breadcrumb a:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    top: 50%;
+    margin-top: 1px;
+    -webkit-transform: translateY(-50%) rotate(15deg);
+    transform: translateY(-50%) rotate(15deg);
+    background: #3c4452;
+    right: -15px
+}
+
+.breadcrumb a:hover {
+    color: #4986f5
+}
+
+.breadcrumb>span:not(.current) {
+    margin-right: 30px;
+    position: relative
+}
+
+.breadcrumb>span:not(.current):after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    background: #36404d;
+    right: -15px
+}
+
+.breadcrumb .current,.breadcrumb .disabled {
+    color: #828f9a
+}
+.task-head {
+    border-radius: 5px;
+    background: #2e3542;
+    border: 0;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    color: #828f9a;
+    overflow: hidden
+}
+
+.task-head .info-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%
+}
+
+.task-head .info-col:first-child {
+    border-bottom: 1px solid #36404d
+}
+
+.task-head .task-desc {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    border-right: 1px solid #333b48;
+    padding: 20px
+}
+
+.task-head .task-desc .icon-wrap {
+    height: 62px;
+    min-width: 62px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #272d39;
+    font-size: 32px;
+    color: #495465
+}
+
+.task-head .task-desc .paragraph {
+    margin-bottom: 10px
+}
+
+.task-head .task-desc .paragraph:last-child {
+    margin-bottom: 0
+}
+
+.task-head .task-desc .dot {
+    display: block;
+    color: #7b8792;
+    margin-bottom: 2px;
+    padding-left: 12px;
+    position: relative
+}
+
+.task-head .task-desc .dot:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    height: 5px;
+    width: 5px;
+    background: #7b8792
+}
+
+.task-head .take-part {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background: #333b48
+}
+
+.task-head .take-part .status {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #2e3542;
+    padding: 0 0 15px
+}
+
+.task-head .take-part .status>div {
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center
+}
+
+.task-head .take-part .status .date-timer,.task-head .take-part .status .status-active {
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px
+}
+
+.task-head .take-part .status .not-active {
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center
+}
+
+.task-head .take-part .status .not-active>span {
+    color: #fff
+}
+
+.task-head .take-part .text {
+    color: #fff;
+    padding: 5px 0
+}
+
+.task-head .take-part .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0 0
+}
+
+.task-head .take-part .btn {
+    height: 48px;
+    margin: 0 auto;
+    justify-content: center;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 13px;
+    width: 80%;
+    text-transform: uppercase
+}
+
+.task-head .task-information {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.task-head .task-information li {
+    align-items: center;
+    position: relative;
+    padding: 25px 10px;
+    border-right: 1px solid #36404d;
+    width: 20%
+}
+
+.task-head .task-information li,.task-head .task-information li>span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.task-head .task-information li .value {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    margin-top: 6px;
+    text-align: center
+}
+
+.task-head .task-information li .value.tip-block {
+    position: relative
+}
+
+.task-head .task-information li .value.tip-block .popover-tip-block {
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.task-head .task-information li .value.tip-block .popover-tip-icon {
+    width: 15px;
+    height: 15px
+}
+
+.task-head .task-information li .value.tip-block .popover-tip-icon svg {
+    height: 11px;
+    width: 11px
+}
+
+.task-head .task-information li:last-child {
+    width: 40%;
+    border-right: 0
+}
+.withPager .list {
+    position: relative
+}
+
+.withPager .list.loading .list .item {
+    opacity: .5
+}
+
+.withPager .loader {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+.table-classic {
+    color: #fff;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: initial
+}
+
+.table-classic tr td,.table-classic tr th {
+    padding: 10px 0
+}
+
+.table-classic tr th {
+    text-align: left;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #5e6a7f;
+    text-transform: uppercase;
+    border-bottom: 1px solid #303643
+}
+
+.table-classic tr td {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #2f3542;
+    letter-spacing: .2px
+}
+.table-classic.hoverable tr:hover {
+    background: #303643
+}
+
+.table-classic.tournament th:last-child {
+    text-align: right
+}
+.table-classic.tournament-history td:nth-last-child(2),.table-classic.tournament-history th:nth-last-child(2) {
+    text-align: center
+}
+
+.table-classic.tournament-history td:last-child,.table-classic.tournament-history th:last-child {
+    text-align: right
+}
+
+.table-classic.profile-history {
+    margin-top: 30px
+}
+
+.table-classic .btn-link,.table-classic .btn-user {
+    background: transparent;
+    color: #7d8a98;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0
+}
+
+.table-classic .btn-link:hover,.table-classic .btn-user:hover {
+    color: #fff
+}
