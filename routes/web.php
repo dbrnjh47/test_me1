@@ -15,7 +15,7 @@
 
 
 
-Route::post('/play', 'TestController@play');1
+Route::post('/play', 'TestController@play');
 
 Route::post('/api/interkassa', 'InterkassaController@paymentHandler');
 
